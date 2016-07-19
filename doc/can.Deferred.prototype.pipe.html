@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--####################################################################
+	THIS IS A GENERATED FILE -- ANY CHANGES MADE WILL BE OVERWRITTEN
+
+	INSTEAD CHANGE:
+	source: [object Object]
+	@function can.Deferred.prototype.pipe
+######################################################################## -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	
+	<link rel="stylesheet" type="text/css" href="./static/bundles/bit-docs-site/static.css">
+	
+</head>
+
+<body>
+	<header><nav class="navbar">
+	<a class="brand" href="../index.html">CanJS</a>
+
+	<ul class="bitovi-menu">
+		<li class="dropdown">
+			<a href="http://bitovi.com" class="bitovi icon-bits">Bitovi</a>
+			<ul class="dropdown-menu">
+				<li><a href="http://bitovi.com">Bitovi.com</a></li>
+				<li><a href="http://bitovi.com/blog/">Blog</a></li>
+				<li><a href="http://bitovi.com/consulting/">Consulting</a></li>
+				<li><a href="http://bitovi.com/training/">Training</a></li>
+				<li><a href="http://bitovi.com/open-source/">Open Source</a></li>
+			</ul>
+		</li>
+	</ul>
+
+	<ul class="navbar-items">
+		<li class="dropdown">
+				<a href="http://github.com/canjs/canjs">Github</a>
+				<ul class="dropdown-menu">
+      		<li><a href="http://github.com/canjs/can-connect">can-connect</a></li>
+					<li><a href=".">can-set</a></li>
+					<li><a href=".">can-compute</a></li>
+					<li><a href=".">can-component</a></li>
+				</ul>
+		</li>
+		<li>
+			<a href="https://gitter.im/canjs/canjs">Chat</a>
+		</li>
+		<li>
+			<a href="http://forums.donejs.com/c/canjs">Forum</a>
+		</li>
+	</ul>
+
+</nav>
+</header>
+	<div class='main-container'>
+
+	<nav class="sidebar">
+    
+        
+
+    
+</nav>
+
+
+<article>
+	
+		<section class="title">
+	<h1>can.Deferred.prototype.pipe</h1>
+</section>
+
+	
+
+	
+		
+			<section class="description">
+    <p>Add callbacks to a Deferred.</p>
+
+</section>
+
+		
+	
+
+
+
+
+<div class="signature">
+  <h2 class="signature-title"><code>deferred.pipe(doneCallback[, failCallback])</code></h2>
+  
+  
+  
+  <div class="parameters">
+    <h3 class="parameters-title">Parameters</h3>
+      <ol>
+        
+          <li><b>doneCallback</b> <code>{function}</code>: <p>A function called when the Deferred is resolved.</p>
+</li>
+        
+          <li><b>failCallback</b> <code>{function}</code>: <p>A function called when the Deferred is rejected.</p>
+</li>
+        
+      </ol>
+  </div>
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+
+	
+		
+			<section class="body">
+    <p><code>deferred.pipe(doneCallback, failCallback)</code> is a utility to filter Deferred(s).</p>
+<pre><code>var def = can.Deferred(),
+filtered = def.pipe(function(val) {
+    return val + &quot; is awesome!&quot;;
+});
+
+def.resolve('Can');
+
+filtered.done(function(value) {
+    alert(value); // Alerts: 'Can is awesome!'
+});
+</code></pre>
+
+</section>
+
+		
+	
+</article>
+</div>
+
+	<footer><p>CanJS is part of <a href="http://donejs.com">DoneJS</a>. Created and maintained by the open source team at <a href="http://bitovi.com">Bitovi</a>. <strong>Currently v3.0.0.</strong></p></footer>
+
+	<script type="text/javascript">
+		var docObject = {"content":"<div class='main-container'>\n\n\t<nav class=\"sidebar\">\n    \n        \n\n    \n</nav>\n\n\n<article>\n\t\n\t\t<section class=\"title\">\n\t<h1>can.Deferred.prototype.pipe</h1>\n</section>\n\n\t\n\n\t\n\t\t\n\t\t\t<section class=\"description\">\n    <p>Add callbacks to a Deferred.</p>\n\n</section>\n\n\t\t\n\t\n\n\n\n\n<div class=\"signature\">\n  <h2 class=\"signature-title\"><code>deferred.pipe(doneCallback[, failCallback])</code></h2>\n  \n  \n  \n  <div class=\"parameters\">\n    <h3 class=\"parameters-title\">Parameters</h3>\n      <ol>\n        \n          <li><b>doneCallback</b> <code>{function}</code>: <p>A function called when the Deferred is resolved.</p>\n</li>\n        \n          <li><b>failCallback</b> <code>{function}</code>: <p>A function called when the Deferred is rejected.</p>\n</li>\n        \n      </ol>\n  </div>\n  \n  \n  \n  \n  \n</div>\n\n\n\n\n\n\t\n\t\t\n\t\t\t<section class=\"body\">\n    <p><code>deferred.pipe(doneCallback, failCallback)</code> is a utility to filter Deferred(s).</p>\n<pre><code>var def = can.Deferred(),\nfiltered = def.pipe(function(val) {\n    return val + &quot; is awesome!&quot;;\n});\n\ndef.resolve('Can');\n\nfiltered.done(function(value) {\n    alert(value); // Alerts: 'Can is awesome!'\n});\n</code></pre>\n\n</section>\n\n\t\t\n\t\n</article>\n</div>\n","src":{"line":710,"codeLine":733,"path":"node_modules/can-model/node_modules/can/util/func.js"},"type":"function","description":"Add callbacks to a Deferred. ","title":"","name":"can.Deferred.prototype.pipe","signatures":[{"code":"deferred.pipe(doneCallback[, failCallback])","description":"","params":[{"types":[{"type":"function","returns":{"types":[{"type":"undefined"}]},"params":[]}],"name":"doneCallback","description":"A function called when the Deferred is resolved."},{"types":[{"type":"function","returns":{"types":[{"type":"undefined"}]},"params":[]}],"name":"failCallback","description":"A function called when the Deferred is rejected.\n"}]}],"_curParam":{"types":[{"type":"function","returns":{"types":[{"type":"undefined"}]},"params":[]}],"name":"failCallback","description":"A function called when the Deferred is rejected.\n"},"comment":" "};
+	</script>
+
+	
+		<script>
+		  steal = {
+		    instantiated: {
+		      "bundles/bit-docs-site/static.css!$css" : null
+		    }
+		  }
+		</script>
+		<script type='text/javascript'
+				data-main="bit-docs-site/static"
+				src="./static/node_modules/steal/steal.production.js"></script>
+	
+</body>
+
+</html>

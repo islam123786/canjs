@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!--####################################################################
+	THIS IS A GENERATED FILE -- ANY CHANGES MADE WILL BE OVERWRITTEN
+
+	INSTEAD CHANGE:
+	source: [object Object]
+	@constructor can.MustacheConstructor
+######################################################################## -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	
+	<link rel="stylesheet" type="text/css" href="./static/bundles/bit-docs-site/static.css">
+	
+</head>
+
+<body>
+	<header><nav class="navbar">
+	<a class="brand" href="../index.html">CanJS</a>
+
+	<ul class="bitovi-menu">
+		<li class="dropdown">
+			<a href="http://bitovi.com" class="bitovi icon-bits">Bitovi</a>
+			<ul class="dropdown-menu">
+				<li><a href="http://bitovi.com">Bitovi.com</a></li>
+				<li><a href="http://bitovi.com/blog/">Blog</a></li>
+				<li><a href="http://bitovi.com/consulting/">Consulting</a></li>
+				<li><a href="http://bitovi.com/training/">Training</a></li>
+				<li><a href="http://bitovi.com/open-source/">Open Source</a></li>
+			</ul>
+		</li>
+	</ul>
+
+	<ul class="navbar-items">
+		<li class="dropdown">
+				<a href="http://github.com/canjs/canjs">Github</a>
+				<ul class="dropdown-menu">
+      		<li><a href="http://github.com/canjs/can-connect">can-connect</a></li>
+					<li><a href=".">can-set</a></li>
+					<li><a href=".">can-compute</a></li>
+					<li><a href=".">can-component</a></li>
+				</ul>
+		</li>
+		<li>
+			<a href="https://gitter.im/canjs/canjs">Chat</a>
+		</li>
+		<li>
+			<a href="http://forums.donejs.com/c/canjs">Forum</a>
+		</li>
+	</ul>
+
+</nav>
+</header>
+	<div class='main-container'>
+
+	<nav class="sidebar">
+    
+        
+	<ul>
+		
+			
+				
+					<li>
+						<span>prototype</span>
+
+						
+	<ul>
+		
+			
+		
+			
+		
+			
+		
+			
+		
+	</ul>
+
+
+					</li>
+				
+
+			
+		
+			
+				
+					<li>
+						<span>static</span>
+
+						
+	<ul>
+		
+			
+		
+	</ul>
+
+
+					</li>
+				
+
+			
+		
+	</ul>
+
+
+    
+</nav>
+
+
+<article>
+	
+		<section class="title">
+	<h1>can.Mustache</h1>
+</section>
+
+	
+
+	
+		
+			<section class="description">
+    <p>Logic-less <a href="http://mustache.github.io/">mustache</a> templates with live binding  when used with <a href="#can_observe">can.Maps</a>.</p>
+
+</section>
+
+		
+	
+
+
+
+
+<div class="signature">
+  <h2 class="signature-title"><code>new can.Mustache(options)</code></h2>
+  <p>Creates an instance of a mustache template. This is typically not used directly in
+favor of <a href="can.view.html">can.view</a> or <a href="can.mustache.html">can.mustache</a>.</p>
+
+  
+  
+  <div class="parameters">
+    <h3 class="parameters-title">Parameters</h3>
+      <ol>
+        
+          <li><b>options</b> <code>{Object}</code>: <p>An options object with the following properties:</p>
+</li>
+        
+      </ol>
+  </div>
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+
+	
+		
+			<section class="body">
+    <h2>Use</h2>
+<p><a href="https://github.com/janl/mustache.js/">Mustache</a> and <a href="http://handlebarsjs.com/">Handlebar</a>
+templates are compatible with can.mustache.</p>
+<p>Mustache templates looks similar to normal HTML except
+they contain keys for inserting data into the template
+and <a href="can.mustache.Sections.html">sections</a> to enumerate and/or filter the enclosed template blocks.</p>
+<p>For example, the following renders a welcome header for
+a user and displays the number of messages.</p>
+<p><strong>Mustache Template</strong></p>
+<pre><code>&lt;script id=&quot;template&quot; type=&quot;text/mustache&quot;&gt;
+    &lt;h1&gt;Welcome {{user}}!&lt;/h1&gt;
+    &lt;p&gt;You have {{messages}} messages.&lt;/p&gt;
+&lt;/script&gt;
+</code></pre>
+<p><strong>JavaScript</strong></p>
+<pre><code>var data = new can.Map({
+    user: 'Tina Fey',
+    messages: 0
+});
+
+var template = can.view(&quot;#template&quot;, data)
+document.body.appendChild(template);
+</code></pre>
+<p><strong>HTML Result</strong></p>
+<pre><code>&lt;h1&gt;Welcome Tina Fey!&lt;/h1&gt;
+&lt;p&gt;You have 0 messages.&lt;/p&gt;
+</code></pre>
+<p>To update the html using live-binding, change an observable value:</p>
+<pre><code>data.attr('message', 5)
+</code></pre>
+<p>This updates this paragraph in the HTML Result to:</p>
+<pre><code>&lt;p&gt;You have 5 messages.&lt;/p&gt;
+</code></pre>
+<p>can.mustache provides significantly more functionality such as:</p>
+<ul>
+<li><a href="can.mustache.Basics.html">Context and Path Basics</a></li>
+<li><a href="can.mustache.Sections.html">Sections</a></li>
+<li><a href="can.mustache.helpers.partial.html">Partials</a></li>
+<li><a href="can.mustache.Acquisition.html">Acquiring Templates</a></li>
+<li><a href="can.mustache.Helpers.html">Helpers</a></li>
+<li><a href="can.mustache.Binding.html">Live Binding</a></li>
+</ul>
+<h2>Tags</h2>
+
+</section>
+
+		
+	
+</article>
+</div>
+
+	<footer><p>CanJS is part of <a href="http://donejs.com">DoneJS</a>. Created and maintained by the open source team at <a href="http://bitovi.com">Bitovi</a>. <strong>Currently v3.0.0.</strong></p></footer>
+
+	<script type="text/javascript">
+		var docObject = {"content":"<div class='main-container'>\n\n\t<nav class=\"sidebar\">\n    \n        \n\t<ul>\n\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<span>prototype</span>\n\n\t\t\t\t\t\t\n\t<ul>\n\t\t\n\t\t\t\n\t\t\n\t\t\t\n\t\t\n\t\t\t\n\t\t\n\t\t\t\n\t\t\n\t</ul>\n\n\n\t\t\t\t\t</li>\n\t\t\t\t\n\n\t\t\t\n\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<span>static</span>\n\n\t\t\t\t\t\t\n\t<ul>\n\t\t\n\t\t\t\n\t\t\n\t</ul>\n\n\n\t\t\t\t\t</li>\n\t\t\t\t\n\n\t\t\t\n\t\t\n\t</ul>\n\n\n    \n</nav>\n\n\n<article>\n\t\n\t\t<section class=\"title\">\n\t<h1>can.Mustache</h1>\n</section>\n\n\t\n\n\t\n\t\t\n\t\t\t<section class=\"description\">\n    <p>Logic-less <a href=\"http://mustache.github.io/\">mustache</a> templates with live binding  when used with <a href=\"#can_observe\">can.Maps</a>.</p>\n\n</section>\n\n\t\t\n\t\n\n\n\n\n<div class=\"signature\">\n  <h2 class=\"signature-title\"><code>new can.Mustache(options)</code></h2>\n  <p>Creates an instance of a mustache template. This is typically not used directly in\nfavor of <a href=\"can.view.html\">can.view</a> or <a href=\"can.mustache.html\">can.mustache</a>.</p>\n\n  \n  \n  <div class=\"parameters\">\n    <h3 class=\"parameters-title\">Parameters</h3>\n      <ol>\n        \n          <li><b>options</b> <code>{Object}</code>: <p>An options object with the following properties:</p>\n</li>\n        \n      </ol>\n  </div>\n  \n  \n  \n  \n  \n</div>\n\n\n\n\n\n\t\n\t\t\n\t\t\t<section class=\"body\">\n    <h2>Use</h2>\n<p><a href=\"https://github.com/janl/mustache.js/\">Mustache</a> and <a href=\"http://handlebarsjs.com/\">Handlebar</a>\ntemplates are compatible with can.mustache.</p>\n<p>Mustache templates looks similar to normal HTML except\nthey contain keys for inserting data into the template\nand <a href=\"can.mustache.Sections.html\">sections</a> to enumerate and/or filter the enclosed template blocks.</p>\n<p>For example, the following renders a welcome header for\na user and displays the number of messages.</p>\n<p><strong>Mustache Template</strong></p>\n<pre><code>&lt;script id=&quot;template&quot; type=&quot;text/mustache&quot;&gt;\n    &lt;h1&gt;Welcome {{user}}!&lt;/h1&gt;\n    &lt;p&gt;You have {{messages}} messages.&lt;/p&gt;\n&lt;/script&gt;\n</code></pre>\n<p><strong>JavaScript</strong></p>\n<pre><code>var data = new can.Map({\n    user: 'Tina Fey',\n    messages: 0\n});\n\nvar template = can.view(&quot;#template&quot;, data)\ndocument.body.appendChild(template);\n</code></pre>\n<p><strong>HTML Result</strong></p>\n<pre><code>&lt;h1&gt;Welcome Tina Fey!&lt;/h1&gt;\n&lt;p&gt;You have 0 messages.&lt;/p&gt;\n</code></pre>\n<p>To update the html using live-binding, change an observable value:</p>\n<pre><code>data.attr('message', 5)\n</code></pre>\n<p>This updates this paragraph in the HTML Result to:</p>\n<pre><code>&lt;p&gt;You have 5 messages.&lt;/p&gt;\n</code></pre>\n<p>can.mustache provides significantly more functionality such as:</p>\n<ul>\n<li><a href=\"can.mustache.Basics.html\">Context and Path Basics</a></li>\n<li><a href=\"can.mustache.Sections.html\">Sections</a></li>\n<li><a href=\"can.mustache.helpers.partial.html\">Partials</a></li>\n<li><a href=\"can.mustache.Acquisition.html\">Acquiring Templates</a></li>\n<li><a href=\"can.mustache.Helpers.html\">Helpers</a></li>\n<li><a href=\"can.mustache.Binding.html\">Live Binding</a></li>\n</ul>\n<h2>Tags</h2>\n\n</section>\n\n\t\t\n\t\n</article>\n</div>\n","name":"can.MustacheConstructor","type":"constructor","description":"Logic-less [http://mustache.github.io/ mustache] templates with live binding  when used with [can.Maps](#can_observe).\n\n","src":{"path":"node_modules/can-model/node_modules/can/view/mustache/doc/MustacheConstructor.md"},"title":"can.Mustache","release":"1.1","deprecated":[{"version":"2.1","description":"As of 2.1, this is considered an internal API.  Use [can.mustache] to create\ntemplates.\n"}],"signatures":[{"code":"new can.Mustache(options)","description":"\n\nCreates an instance of a mustache template. This is typically not used directly in \nfavor of [can.view] or [can.mustache].\n","params":[{"types":[{"type":"Object","options":[{"name":"text","description":"The text of the mustache template.","types":[{"type":"String"}]},{"name":"name","description":"The name of the template used to identify it to\ndebugging tools.\n","types":[{"type":"String"}],"optional":true}]}],"name":"options","description":"An options object with the following properties:\n"}]}],"_curParam":{"types":[{"type":"Object","options":[{"name":"text","description":"The text of the mustache template.","types":[{"type":"String"}]},{"name":"name","description":"The name of the template used to identify it to\ndebugging tools.\n","types":[{"type":"String"}],"optional":true}]}],"name":"options","description":"An options object with the following properties:\n"},"types":[],"comment":" ","api":"can.mustache.tags"};
+	</script>
+
+	
+		<script>
+		  steal = {
+		    instantiated: {
+		      "bundles/bit-docs-site/static.css!$css" : null
+		    }
+		  }
+		</script>
+		<script type='text/javascript'
+				data-main="bit-docs-site/static"
+				src="./static/node_modules/steal/steal.production.js"></script>
+	
+</body>
+
+</html>

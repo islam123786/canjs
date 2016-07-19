@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--####################################################################
+	THIS IS A GENERATED FILE -- ANY CHANGES MADE WILL BE OVERWRITTEN
+
+	INSTEAD CHANGE:
+	source: [object Object]
+	@page mustache.test
+######################################################################## -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	
+	<link rel="stylesheet" type="text/css" href="./static/bundles/bit-docs-site/static.css">
+	
+</head>
+
+<body>
+	<header><nav class="navbar">
+	<a class="brand" href="../index.html">CanJS</a>
+
+	<ul class="bitovi-menu">
+		<li class="dropdown">
+			<a href="http://bitovi.com" class="bitovi icon-bits">Bitovi</a>
+			<ul class="dropdown-menu">
+				<li><a href="http://bitovi.com">Bitovi.com</a></li>
+				<li><a href="http://bitovi.com/blog/">Blog</a></li>
+				<li><a href="http://bitovi.com/consulting/">Consulting</a></li>
+				<li><a href="http://bitovi.com/training/">Training</a></li>
+				<li><a href="http://bitovi.com/open-source/">Open Source</a></li>
+			</ul>
+		</li>
+	</ul>
+
+	<ul class="navbar-items">
+		<li class="dropdown">
+				<a href="http://github.com/canjs/canjs">Github</a>
+				<ul class="dropdown-menu">
+      		<li><a href="http://github.com/canjs/can-connect">can-connect</a></li>
+					<li><a href=".">can-set</a></li>
+					<li><a href=".">can-compute</a></li>
+					<li><a href=".">can-component</a></li>
+				</ul>
+		</li>
+		<li>
+			<a href="https://gitter.im/canjs/canjs">Chat</a>
+		</li>
+		<li>
+			<a href="http://forums.donejs.com/c/canjs">Forum</a>
+		</li>
+	</ul>
+
+</nav>
+</header>
+	<div class='main-container'>
+
+	<nav class="sidebar">
+    
+        
+
+    
+</nav>
+
+
+<article>
+	
+		<section class="title">
+	<h1>mustache.test</h1>
+</section>
+
+	
+
+	
+		
+			<section class="description">
+    <p>Testing your Mustache implementation against this specification should be
+relatively simple.  If you have a readily available testing framework on your
+platform, your task may be even simpler.</p>
+
+</section>
+
+		
+	
+
+
+
+
+
+
+
+
+	
+		
+			<section class="body">
+    <p>In general, the process for each <code>.yml</code> file is as follows:</p>
+<ol>
+<li><p>Use a YAML parser to load the file.</p></li>
+<li><p>For each test in the 'tests' array:</p></li>
+<li><p>Ensure that each element of the 'partials' hash (if it exists) is
+stored in a place where the interpreter will look for it.</p></li>
+<li><p>If your implementation will not support lambdas, feel free to skip over
+the optional '~lambdas.yml' file.</p></li>
+</ol>
+<p>2.1. If your implementation will support lambdas, ensure that each member of
+'data' tagged with '!code' is properly processed into a language-
+specific lambda reference.</p>
+<pre><code>  *   e.g. Given this YAML data hash:
+
+      `{ x: !code { ruby: 'proc { &quot;x&quot; }', perl: 'sub { &quot;x&quot; }' } }`
+
+      a Ruby-based Mustache implementation would process it such that it
+      was equivalent to this Ruby hash:
+
+      `{ 'x' =&gt; proc { &quot;x&quot; } }`
+
+  *   If your implementation language does not currently have lambda
+      examples in the spec, feel free to implement them and send a pull
+      request.
+
+  *   The JSON version of the spec represents these tagged values as a hash
+      with a '`__tag__`' key of 'code'.
+</code></pre>
+<ol start="3">
+<li><p>Render the template (stored in the 'template' key) with the given 'data'
+hash.</p></li>
+<li><p>Compare the results of your rendering against the 'expected' value; any
+differences should be reported, along with any useful debugging
+information.</p>
+<ul>
+<li>Of note, the 'desc' key contains a rough one-line description of the
+behavior being tested -- this is most useful in conjunction with the
+file name and test 'name'.</li>
+</ul></li>
+</ol>
+
+</section>
+
+		
+	
+</article>
+</div>
+
+	<footer><p>CanJS is part of <a href="http://donejs.com">DoneJS</a>. Created and maintained by the open source team at <a href="http://bitovi.com">Bitovi</a>. <strong>Currently v3.0.0.</strong></p></footer>
+
+	<script type="text/javascript">
+		var docObject = {"content":"<div class='main-container'>\n\n\t<nav class=\"sidebar\">\n    \n        \n\n    \n</nav>\n\n\n<article>\n\t\n\t\t<section class=\"title\">\n\t<h1>mustache.test</h1>\n</section>\n\n\t\n\n\t\n\t\t\n\t\t\t<section class=\"description\">\n    <p>Testing your Mustache implementation against this specification should be\nrelatively simple.  If you have a readily available testing framework on your\nplatform, your task may be even simpler.</p>\n\n</section>\n\n\t\t\n\t\n\n\n\n\n\n\n\n\n\t\n\t\t\n\t\t\t<section class=\"body\">\n    <p>In general, the process for each <code>.yml</code> file is as follows:</p>\n<ol>\n<li><p>Use a YAML parser to load the file.</p></li>\n<li><p>For each test in the 'tests' array:</p></li>\n<li><p>Ensure that each element of the 'partials' hash (if it exists) is\nstored in a place where the interpreter will look for it.</p></li>\n<li><p>If your implementation will not support lambdas, feel free to skip over\nthe optional '~lambdas.yml' file.</p></li>\n</ol>\n<p>2.1. If your implementation will support lambdas, ensure that each member of\n'data' tagged with '!code' is properly processed into a language-\nspecific lambda reference.</p>\n<pre><code>  *   e.g. Given this YAML data hash:\n\n      `{ x: !code { ruby: 'proc { &quot;x&quot; }', perl: 'sub { &quot;x&quot; }' } }`\n\n      a Ruby-based Mustache implementation would process it such that it\n      was equivalent to this Ruby hash:\n\n      `{ 'x' =&gt; proc { &quot;x&quot; } }`\n\n  *   If your implementation language does not currently have lambda\n      examples in the spec, feel free to implement them and send a pull\n      request.\n\n  *   The JSON version of the spec represents these tagged values as a hash\n      with a '`__tag__`' key of 'code'.\n</code></pre>\n<ol start=\"3\">\n<li><p>Render the template (stored in the 'template' key) with the given 'data'\nhash.</p></li>\n<li><p>Compare the results of your rendering against the 'expected' value; any\ndifferences should be reported, along with any useful debugging\ninformation.</p>\n<ul>\n<li>Of note, the 'desc' key contains a rough one-line description of the\nbehavior being tested -- this is most useful in conjunction with the\nfile name and test 'name'.</li>\n</ul></li>\n</ol>\n\n</section>\n\n\t\t\n\t\n</article>\n</div>\n","src":{"path":"node_modules/can-model/node_modules/can/view/mustache/spec/TESTING.md"},"description":"Testing your Mustache implementation against this specification should be\nrelatively simple.  If you have a readily available testing framework on your\nplatform, your task may be even simpler.\n","name":"mustache.test","type":"page"};
+	</script>
+
+	
+		<script>
+		  steal = {
+		    instantiated: {
+		      "bundles/bit-docs-site/static.css!$css" : null
+		    }
+		  }
+		</script>
+		<script type='text/javascript'
+				data-main="bit-docs-site/static"
+				src="./static/node_modules/steal/steal.production.js"></script>
+	
+</body>
+
+</html>

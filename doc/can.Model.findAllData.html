@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--####################################################################
+	THIS IS A GENERATED FILE -- ANY CHANGES MADE WILL BE OVERWRITTEN
+
+	INSTEAD CHANGE:
+	source: [object Object]
+	@typedef can.Model.findAllData
+######################################################################## -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	
+	<link rel="stylesheet" type="text/css" href="./static/bundles/bit-docs-site/static.css">
+	
+</head>
+
+<body>
+	<header><nav class="navbar">
+	<a class="brand" href="../index.html">CanJS</a>
+
+	<ul class="bitovi-menu">
+		<li class="dropdown">
+			<a href="http://bitovi.com" class="bitovi icon-bits">Bitovi</a>
+			<ul class="dropdown-menu">
+				<li><a href="http://bitovi.com">Bitovi.com</a></li>
+				<li><a href="http://bitovi.com/blog/">Blog</a></li>
+				<li><a href="http://bitovi.com/consulting/">Consulting</a></li>
+				<li><a href="http://bitovi.com/training/">Training</a></li>
+				<li><a href="http://bitovi.com/open-source/">Open Source</a></li>
+			</ul>
+		</li>
+	</ul>
+
+	<ul class="navbar-items">
+		<li class="dropdown">
+				<a href="http://github.com/canjs/canjs">Github</a>
+				<ul class="dropdown-menu">
+      		<li><a href="http://github.com/canjs/can-connect">can-connect</a></li>
+					<li><a href=".">can-set</a></li>
+					<li><a href=".">can-compute</a></li>
+					<li><a href=".">can-component</a></li>
+				</ul>
+		</li>
+		<li>
+			<a href="https://gitter.im/canjs/canjs">Chat</a>
+		</li>
+		<li>
+			<a href="http://forums.donejs.com/c/canjs">Forum</a>
+		</li>
+	</ul>
+
+</nav>
+</header>
+	<div class='main-container'>
+
+	<nav class="sidebar">
+    
+        
+
+    
+</nav>
+
+
+<article>
+	
+		<section class="title">
+	<h1>findAllData</h1>
+</section>
+
+	
+
+	
+		
+			<section class="description">
+    <p>Retrieves a list of items for <a href="can.Model.models.html">models</a>, typically by making an
+Ajax request.</p>
+
+</section>
+
+		
+	
+
+
+
+
+<div class="signature">
+  <h2 class="signature-title"><code>function(params)</code></h2>
+  
+  
+  
+  <div class="parameters">
+    <h3 class="parameters-title">Parameters</h3>
+      <ol>
+        
+          <li><b>params</b> <code>{Object}</code>: <p>Specifies the list to be retrieved.</p>
+</li>
+        
+      </ol>
+  </div>
+  
+  
+  
+  <ul>
+      <li><b>returns</b> : <p>A deferred that resolves to a data structure
+that can be understood by <a href="can.Model.models.html">models</a>.</p>
+ </li>
+  </ul>
+  
+  
+  
+</div>
+
+
+
+
+
+	
+		
+			<section class="body">
+    <h2>Use</h2>
+<p>Typically, <code>findAll</code> is implemented with a &quot;string&quot; or [can.AjaxSettings ajax settings object] like:</p>
+<pre><code>findAll: &quot;GET /tasks&quot;
+</code></pre>
+<p>or</p>
+<pre><code>findAll: {url: &quot;/tasks&quot;, dataType: &quot;custom&quot;}
+</code></pre>
+<p><a href="can.Model.setup.html">can.Model.setup</a> converts</p>
+
+</section>
+
+		
+	
+</article>
+</div>
+
+	<footer><p>CanJS is part of <a href="http://donejs.com">DoneJS</a>. Created and maintained by the open source team at <a href="http://bitovi.com">Bitovi</a>. <strong>Currently v3.0.0.</strong></p></footer>
+
+	<script type="text/javascript">
+		var docObject = {"content":"<div class='main-container'>\n\n\t<nav class=\"sidebar\">\n    \n        \n\n    \n</nav>\n\n\n<article>\n\t\n\t\t<section class=\"title\">\n\t<h1>findAllData</h1>\n</section>\n\n\t\n\n\t\n\t\t\n\t\t\t<section class=\"description\">\n    <p>Retrieves a list of items for <a href=\"can.Model.models.html\">models</a>, typically by making an\nAjax request.</p>\n\n</section>\n\n\t\t\n\t\n\n\n\n\n<div class=\"signature\">\n  <h2 class=\"signature-title\"><code>function(params)</code></h2>\n  \n  \n  \n  <div class=\"parameters\">\n    <h3 class=\"parameters-title\">Parameters</h3>\n      <ol>\n        \n          <li><b>params</b> <code>{Object}</code>: <p>Specifies the list to be retrieved.</p>\n</li>\n        \n      </ol>\n  </div>\n  \n  \n  \n  <ul>\n      <li><b>returns</b> : <p>A deferred that resolves to a data structure\nthat can be understood by <a href=\"can.Model.models.html\">models</a>.</p>\n </li>\n  </ul>\n  \n  \n  \n</div>\n\n\n\n\n\n\t\n\t\t\n\t\t\t<section class=\"body\">\n    <h2>Use</h2>\n<p>Typically, <code>findAll</code> is implemented with a &quot;string&quot; or [can.AjaxSettings ajax settings object] like:</p>\n<pre><code>findAll: &quot;GET /tasks&quot;\n</code></pre>\n<p>or</p>\n<pre><code>findAll: {url: &quot;/tasks&quot;, dataType: &quot;custom&quot;}\n</code></pre>\n<p><a href=\"can.Model.setup.html\">can.Model.setup</a> converts</p>\n\n</section>\n\n\t\t\n\t\n</article>\n</div>\n","src":{"path":"node_modules/can-model/node_modules/can/model/doc/findAllData.md"},"description":"\nRetrieves a list of items for [can.Model.models], typically by making an \nAjax request.\n","type":"typedef","title":"findAllData","types":[{"type":"function","returns":{"types":[{"type":"can.Deferred"}],"description":"A deferred that resolves to a data structure\nthat can be understood by [can.Model.models].\n\n\n\n"},"params":[{"types":[{"type":"Object","options":[]}],"name":"params","description":"Specifies the list to be retrieved.\n"}]}],"name":"can.Model.findAllData","_curParam":{"types":[{"type":"Object","options":[]}],"name":"params","description":"Specifies the list to be retrieved.\n"},"_curReturn":{"types":[{"type":"can.Deferred"}],"description":"A deferred that resolves to a data structure\nthat can be understood by [can.Model.models].\n\n\n\n"},"comment":" "};
+	</script>
+
+	
+		<script>
+		  steal = {
+		    instantiated: {
+		      "bundles/bit-docs-site/static.css!$css" : null
+		    }
+		  }
+		</script>
+		<script type='text/javascript'
+				data-main="bit-docs-site/static"
+				src="./static/node_modules/steal/steal.production.js"></script>
+	
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!--####################################################################
+	THIS IS A GENERATED FILE -- ANY CHANGES MADE WILL BE OVERWRITTEN
+
+	INSTEAD CHANGE:
+	source: [object Object]
+	@typedef can.route.binding
+######################################################################## -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	
+	<link rel="stylesheet" type="text/css" href="./static/bundles/bit-docs-site/static.css">
+	
+</head>
+
+<body>
+	<header><nav class="navbar">
+	<a class="brand" href="../index.html">CanJS</a>
+
+	<ul class="bitovi-menu">
+		<li class="dropdown">
+			<a href="http://bitovi.com" class="bitovi icon-bits">Bitovi</a>
+			<ul class="dropdown-menu">
+				<li><a href="http://bitovi.com">Bitovi.com</a></li>
+				<li><a href="http://bitovi.com/blog/">Blog</a></li>
+				<li><a href="http://bitovi.com/consulting/">Consulting</a></li>
+				<li><a href="http://bitovi.com/training/">Training</a></li>
+				<li><a href="http://bitovi.com/open-source/">Open Source</a></li>
+			</ul>
+		</li>
+	</ul>
+
+	<ul class="navbar-items">
+		<li class="dropdown">
+				<a href="http://github.com/canjs/canjs">Github</a>
+				<ul class="dropdown-menu">
+      		<li><a href="http://github.com/canjs/can-connect">can-connect</a></li>
+					<li><a href=".">can-set</a></li>
+					<li><a href=".">can-compute</a></li>
+					<li><a href=".">can-component</a></li>
+				</ul>
+		</li>
+		<li>
+			<a href="https://gitter.im/canjs/canjs">Chat</a>
+		</li>
+		<li>
+			<a href="http://forums.donejs.com/c/canjs">Forum</a>
+		</li>
+	</ul>
+
+</nav>
+</header>
+	<div class='main-container'>
+
+	<nav class="sidebar">
+    
+        
+
+    
+</nav>
+
+
+<article>
+	
+		<section class="title">
+	<h1>can.route.binding</h1>
+</section>
+
+	
+
+	
+		
+			<section class="description">
+    
+</section>
+
+		
+	
+
+
+
+
+<div class="signature">
+  <h2 class="signature-title"><code>Object</code></h2>
+  
+  
+  
+  
+  
+  
+  
+  <div class="options">
+  <h3>Options</h3>
+    <ul>
+    
+      <li>
+        <b>root</b> <code>{String}</code>:
+        <p>The starting point of
+the url to match. For <code>hashchange</code>, the value
+is &quot;#!&quot;. For <code>pushstate</code>, the value is <code>/</code>.  This can
+be overwritten before <a href="can.route.ready.html">ready</a> is called like:</p>
+<pre><code>can.route.bindings.pushstate.root = &quot;/site/&quot;
+</code></pre>
+
+      </li>
+    
+      <li>
+        <b>querySeparator</b> <code>{String}</code>:
+        <p>Specifies the seperator
+between the path part of the url and the query (also known as search)
+part of the url. For <code>hashchange</code>, the value
+is <code>&quot;&amp;&quot;</code>. For <code>pushstate</code>, the value is <code>&quot;?&quot;</code>.</p>
+
+      </li>
+    
+      <li>
+        <b>paramsMatcher</b> <code>{RegExp}</code>:
+        <p>A regular expression that is used
+to identify the <code>key=value</code> pairs in the query part of the url.</p>
+
+      </li>
+    
+      <li>
+        <b>matchingPartOfURL</b> <code>{function}</code>:
+        <p>Reads the url and returns the
+part that is used for matching routes.</p>
+
+      </li>
+    
+      <li>
+        <b>setURL</b> <code>{function(path)}</code>:
+        <p>Called with the
+serialized can.route data after a route has changed.
+Returns what the url has been updated to.</p>
+
+      </li>
+    
+      <li>
+        <b>bind</b> <code>{function}</code>:
+        <p>Attaches listeners to the document to know
+when the url has changed.  Typically <code>bind</code> is called when <a href="can.route.ready.html">ready</a> is called.</p>
+
+      </li>
+    
+      <li>
+        <b>unbind</b> <code>{function}</code>:
+        <p>Tears down the bindings to the document.</p>
+
+      </li>
+    
+    </ul>
+  </div>
+  
+</div>
+
+
+
+
+
+	
+		
+	
+</article>
+</div>
+
+	<footer><p>CanJS is part of <a href="http://donejs.com">DoneJS</a>. Created and maintained by the open source team at <a href="http://bitovi.com">Bitovi</a>. <strong>Currently v3.0.0.</strong></p></footer>
+
+	<script type="text/javascript">
+		var docObject = {"content":"<div class='main-container'>\n\n\t<nav class=\"sidebar\">\n    \n        \n\n    \n</nav>\n\n\n<article>\n\t\n\t\t<section class=\"title\">\n\t<h1>can.route.binding</h1>\n</section>\n\n\t\n\n\t\n\t\t\n\t\t\t<section class=\"description\">\n    \n</section>\n\n\t\t\n\t\n\n\n\n\n<div class=\"signature\">\n  <h2 class=\"signature-title\"><code>Object</code></h2>\n  \n  \n  \n  \n  \n  \n  \n  <div class=\"options\">\n  <h3>Options</h3>\n    <ul>\n    \n      <li>\n        <b>root</b> <code>{String}</code>:\n        <p>The starting point of\nthe url to match. For <code>hashchange</code>, the value\nis &quot;#!&quot;. For <code>pushstate</code>, the value is <code>/</code>.  This can\nbe overwritten before <a href=\"can.route.ready.html\">ready</a> is called like:</p>\n<pre><code>can.route.bindings.pushstate.root = &quot;/site/&quot;\n</code></pre>\n\n      </li>\n    \n      <li>\n        <b>querySeparator</b> <code>{String}</code>:\n        <p>Specifies the seperator\nbetween the path part of the url and the query (also known as search)\npart of the url. For <code>hashchange</code>, the value\nis <code>&quot;&amp;&quot;</code>. For <code>pushstate</code>, the value is <code>&quot;?&quot;</code>.</p>\n\n      </li>\n    \n      <li>\n        <b>paramsMatcher</b> <code>{RegExp}</code>:\n        <p>A regular expression that is used\nto identify the <code>key=value</code> pairs in the query part of the url.</p>\n\n      </li>\n    \n      <li>\n        <b>matchingPartOfURL</b> <code>{function}</code>:\n        <p>Reads the url and returns the\npart that is used for matching routes.</p>\n\n      </li>\n    \n      <li>\n        <b>setURL</b> <code>{function(path)}</code>:\n        <p>Called with the\nserialized can.route data after a route has changed.\nReturns what the url has been updated to.</p>\n\n      </li>\n    \n      <li>\n        <b>bind</b> <code>{function}</code>:\n        <p>Attaches listeners to the document to know\nwhen the url has changed.  Typically <code>bind</code> is called when <a href=\"can.route.ready.html\">ready</a> is called.</p>\n\n      </li>\n    \n      <li>\n        <b>unbind</b> <code>{function}</code>:\n        <p>Tears down the bindings to the document.</p>\n\n      </li>\n    \n    </ul>\n  </div>\n  \n</div>\n\n\n\n\n\n\t\n\t\t\n\t\n</article>\n</div>\n","src":{"path":"node_modules/can-model/node_modules/can/route/pushstate/binding.md"},"description":"\n","type":"typedef","title":"","types":[{"type":"Object","options":[{"name":"root","description":"The starting point of \nthe url to match. For `hashchange`, the value\nis \"#!\". For `pushstate`, the value is `/`.  This can\nbe overwritten before [can.route.ready] is called like:\n\n    can.route.bindings.pushstate.root = \"/site/\"\n","types":[{"type":"String"}]},{"name":"querySeparator","description":"Specifies the seperator\nbetween the path part of the url and the query (also known as search)\npart of the url. For `hashchange`, the value\nis `\"&\"`. For `pushstate`, the value is `\"?\"`.\n","types":[{"type":"String"}]},{"name":"paramsMatcher","description":"A regular expression that is used\nto identify the `key=value` pairs in the query part of the url.\n","types":[{"type":"RegExp"}]},{"name":"matchingPartOfURL","description":"Reads the url and returns the\npart that is used for matching routes.\n","types":[{"type":"function","returns":{"types":[{"type":"String"}]},"params":[]}]},{"name":"setURL","description":"Called with the \nserialized can.route data after a route has changed.\nReturns what the url has been updated to.\n","types":[{"type":"function","returns":{"types":[{"type":"String"}]},"params":[{"types":[{"type":"path"}]}]}]},{"name":"bind","description":"Attaches listeners to the document to know\nwhen the url has changed.  Typically `bind` is called when [can.route.ready] is called.\n","types":[{"type":"function","returns":{"types":[{"type":"undefined"}]},"params":[]}]},{"name":"unbind","description":"Tears down the bindings to the document.\n\n\n","types":[{"type":"function","returns":{"types":[{"type":"undefined"}]},"params":[]}]}]}],"name":"can.route.binding"};
+	</script>
+
+	
+		<script>
+		  steal = {
+		    instantiated: {
+		      "bundles/bit-docs-site/static.css!$css" : null
+		    }
+		  }
+		</script>
+		<script type='text/javascript'
+				data-main="bit-docs-site/static"
+				src="./static/node_modules/steal/steal.production.js"></script>
+	
+</body>
+
+</html>

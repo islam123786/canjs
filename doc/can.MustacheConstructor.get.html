@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!--####################################################################
+	THIS IS A GENERATED FILE -- ANY CHANGES MADE WILL BE OVERWRITTEN
+
+	INSTEAD CHANGE:
+	source: [object Object]
+	@function can.MustacheConstructor.get
+######################################################################## -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	
+	<link rel="stylesheet" type="text/css" href="./static/bundles/bit-docs-site/static.css">
+	
+</head>
+
+<body>
+	<header><nav class="navbar">
+	<a class="brand" href="../index.html">CanJS</a>
+
+	<ul class="bitovi-menu">
+		<li class="dropdown">
+			<a href="http://bitovi.com" class="bitovi icon-bits">Bitovi</a>
+			<ul class="dropdown-menu">
+				<li><a href="http://bitovi.com">Bitovi.com</a></li>
+				<li><a href="http://bitovi.com/blog/">Blog</a></li>
+				<li><a href="http://bitovi.com/consulting/">Consulting</a></li>
+				<li><a href="http://bitovi.com/training/">Training</a></li>
+				<li><a href="http://bitovi.com/open-source/">Open Source</a></li>
+			</ul>
+		</li>
+	</ul>
+
+	<ul class="navbar-items">
+		<li class="dropdown">
+				<a href="http://github.com/canjs/canjs">Github</a>
+				<ul class="dropdown-menu">
+      		<li><a href="http://github.com/canjs/can-connect">can-connect</a></li>
+					<li><a href=".">can-set</a></li>
+					<li><a href=".">can-compute</a></li>
+					<li><a href=".">can-component</a></li>
+				</ul>
+		</li>
+		<li>
+			<a href="https://gitter.im/canjs/canjs">Chat</a>
+		</li>
+		<li>
+			<a href="http://forums.donejs.com/c/canjs">Forum</a>
+		</li>
+	</ul>
+
+</nav>
+</header>
+	<div class='main-container'>
+
+	<nav class="sidebar">
+    
+        
+	<ul>
+		
+			
+				
+					<li>
+						<span>prototype</span>
+
+						
+	<ul>
+		
+			
+		
+			
+		
+			
+		
+			
+		
+	</ul>
+
+
+					</li>
+				
+
+			
+		
+			
+				
+					<li>
+						<span>static</span>
+
+						
+	<ul>
+		
+			
+		
+	</ul>
+
+
+					</li>
+				
+
+			
+		
+	</ul>
+
+
+    
+</nav>
+
+
+<article>
+	
+		<section class="title">
+	<h1>can.MustacheConstructor.get</h1>
+</section>
+
+	
+
+	
+		
+			<section class="description">
+    <p>Resolves a key for a given object (and then a context if that fails).</p>
+
+</section>
+
+		
+	
+
+
+
+
+
+
+
+
+	
+		
+			<section class="body">
+    <pre><code>obj = this
+context = { a: true }
+ref = 'a.b.c'
+     =&gt; obj.a.b.c || context.a.b.c || ''
+</code></pre>
+<p>This implements the following Mustache specs:
+Deeply Nested Contexts
+All elements on the context stack should be accessible.</p>
+<pre><code>{{#bool}}B {{#bool}}C{{/bool}} D{{/bool}}
+{ bool: true }
+=&gt; &quot;B C D&quot;
+</code></pre>
+<p>Basic Context Miss Interpolation
+Failed context lookups should default to empty strings.</p>
+<pre><code>{{cannot}}
+=&gt; &quot;&quot;
+</code></pre>
+<p>Dotted Names - Broken Chains
+Any falsey value prior to the last part of the name should yield ''.
+{{a.b.c}}
+{ a: { d: 1 } }
+=&gt; &quot;&quot;</p>
+
+</section>
+
+		
+	
+</article>
+</div>
+
+	<footer><p>CanJS is part of <a href="http://donejs.com">DoneJS</a>. Created and maintained by the open source team at <a href="http://bitovi.com">Bitovi</a>. <strong>Currently v3.0.0.</strong></p></footer>
+
+	<script type="text/javascript">
+		var docObject = {"content":"<div class='main-container'>\n\n\t<nav class=\"sidebar\">\n    \n        \n\t<ul>\n\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<span>prototype</span>\n\n\t\t\t\t\t\t\n\t<ul>\n\t\t\n\t\t\t\n\t\t\n\t\t\t\n\t\t\n\t\t\t\n\t\t\n\t\t\t\n\t\t\n\t</ul>\n\n\n\t\t\t\t\t</li>\n\t\t\t\t\n\n\t\t\t\n\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<span>static</span>\n\n\t\t\t\t\t\t\n\t<ul>\n\t\t\n\t\t\t\n\t\t\n\t</ul>\n\n\n\t\t\t\t\t</li>\n\t\t\t\t\n\n\t\t\t\n\t\t\n\t</ul>\n\n\n    \n</nav>\n\n\n<article>\n\t\n\t\t<section class=\"title\">\n\t<h1>can.MustacheConstructor.get</h1>\n</section>\n\n\t\n\n\t\n\t\t\n\t\t\t<section class=\"description\">\n    <p>Resolves a key for a given object (and then a context if that fails).</p>\n\n</section>\n\n\t\t\n\t\n\n\n\n\n\n\n\n\n\t\n\t\t\n\t\t\t<section class=\"body\">\n    <pre><code>obj = this\ncontext = { a: true }\nref = 'a.b.c'\n     =&gt; obj.a.b.c || context.a.b.c || ''\n</code></pre>\n<p>This implements the following Mustache specs:\nDeeply Nested Contexts\nAll elements on the context stack should be accessible.</p>\n<pre><code>{{#bool}}B {{#bool}}C{{/bool}} D{{/bool}}\n{ bool: true }\n=&gt; &quot;B C D&quot;\n</code></pre>\n<p>Basic Context Miss Interpolation\nFailed context lookups should default to empty strings.</p>\n<pre><code>{{cannot}}\n=&gt; &quot;&quot;\n</code></pre>\n<p>Dotted Names - Broken Chains\nAny falsey value prior to the last part of the name should yield ''.\n{{a.b.c}}\n{ a: { d: 1 } }\n=&gt; &quot;&quot;</p>\n\n</section>\n\n\t\t\n\t\n</article>\n</div>\n","type":"function","name":"can.MustacheConstructor.get","params":[{"types":[{"type":"can.mustache.key"}],"name":"key","description":"The reference to check for on the obj/context."},{"name":"scopeAndOptions","types":[{"type":"*"}]},{"types":[{"type":"Boolean"}],"optional":true,"name":"isHelper","description":"Whether the reference is seen as a helper.\n\t "},{"name":"isArgument","types":[{"type":"*"}]},{"name":"isLookup","types":[{"type":"*"}]},{"types":[{"type":"Object","options":[]}],"name":"obj","description":"The object to use for checking for a reference."},{"types":[{"type":"Object","options":[]}],"name":"context","description":"The context to use for checking for a reference if it doesn't exist in the object."}],"parent":"can.MustacheConstructor.prototype","src":{"line":1500,"codeLine":1536,"path":"node_modules/can-model/node_modules/can/view/mustache/mustache.js"},"description":"\nResolves a key for a given object (and then a context if that fails).\n","title":"","hide":true,"_curParam":{"types":[{"type":"Boolean"}],"optional":true,"name":"isHelper","description":"Whether the reference is seen as a helper.\n\t "}};
+	</script>
+
+	
+		<script>
+		  steal = {
+		    instantiated: {
+		      "bundles/bit-docs-site/static.css!$css" : null
+		    }
+		  }
+		</script>
+		<script type='text/javascript'
+				data-main="bit-docs-site/static"
+				src="./static/node_modules/steal/steal.production.js"></script>
+	
+</body>
+
+</html>
